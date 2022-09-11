@@ -1,0 +1,17 @@
+.title {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin-bottom: 40px;
+	&__line {
+		width: 300px;
+		margin-left: 10px;
+		height: 1px;
+		background-color: $lightest-navy;
+	}
+	&__number {
+		font-weight: 400;
+		color: $green;
+		font-size: 24px;
+	}
+}
