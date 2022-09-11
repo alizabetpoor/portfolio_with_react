@@ -1,0 +1,32 @@
+.biosection {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: 25%;
+	&__title {
+		font-size: 16px;
+		color: $green;
+		font-weight: 400;
+	}
+	&__name {
+		color: $lightest-slate;
+		font-size: 80px;
+		font-weight: 600;
+		margin: 10px 0;
+	}
+	&__role {
+		font-size: 80px;
+		font-weight: 600;
+		margin-top: -10px;
+		color: $slate;
+	}
+	&__description {
+		max-width: 540px;
+		color: $slate;
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+}
