@@ -1,15 +1,12 @@
 import Image from 'next/image';
+import Title from '../Title';
 import styles from './style.module.scss';
 
 const AboutSection = () => {
 	return (
 		<div className={styles.aboutSection}>
 			<div>
-				<div className={styles.aboutSection__title}>
-					<span className={styles.aboutSection__title__number}>01.</span>
-					<h2 className={styles.aboutSection__title__text}>About Me</h2>
-					<span className={styles.aboutSection__title__line}></span>
-				</div>
+				<Title text='About Me' number={1} />
 				<div className={styles.aboutSection__detail}>
 					<div className={styles.aboutSection__detail__text}>
 						<p>
