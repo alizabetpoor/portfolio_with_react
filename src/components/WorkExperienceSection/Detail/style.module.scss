@@ -1,0 +1,27 @@
+.detail {
+	color: $light-slate;
+
+	&__roleAndCompany {
+		font-size: 22px;
+		color: $lightest-slate;
+		font-weight: 500;
+		span {
+			&:last-child {
+				color: $green;
+			}
+		}
+		a {
+			&:last-child {
+				color: $green;
+			}
+		}
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		li {
+			&::before {
+			}
+		}
+	}
+}

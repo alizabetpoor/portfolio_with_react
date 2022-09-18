@@ -1,0 +1,24 @@
+.company {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	color: $lightest-slate;
+	list-style: none;
+	font-size: 14px;
+	li {
+		padding: 12px 28px;
+		border-left: 2px solid $lightest-navy;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			background-color: $light-navy;
+			color: $green;
+			cursor: pointer;
+		}
+	}
+
+	&__active {
+		border-left: 2px solid $green !important;
+		background-color: $light-navy;
+		color: $green;
+	}
+}
