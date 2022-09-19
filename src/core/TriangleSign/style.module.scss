@@ -1,0 +1,10 @@
+.triangle {
+	width: 0;
+	height: 0;
+
+	&__inside {
+		position: relative;
+		width: 0;
+		height: 0;
+	}
+}
