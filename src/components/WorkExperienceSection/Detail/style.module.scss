@@ -5,10 +5,8 @@
 		font-size: 22px;
 		color: $lightest-slate;
 		font-weight: 500;
-		span {
-			&:last-child {
-				color: $green;
-			}
+		&__sign {
+			color: $green;
 		}
 		a {
 			&:last-child {
@@ -16,12 +14,19 @@
 			}
 		}
 	}
+	&__date {
+		font-size: 13px;
+		margin: 4px 0 16px 0;
+	}
 	&__items {
+		font-size: 18px;
 		display: flex;
 		flex-direction: column;
-		li {
-			&::before {
-			}
+		&__item {
+			display: flex;
+			align-items: center;
+			column-gap: 16px;
+			margin-bottom: 10px;
 		}
 	}
 }

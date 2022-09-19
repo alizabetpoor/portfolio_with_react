@@ -1,12 +1,13 @@
 .workExperience {
 	height: 100vh;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	flex-direction: column;
 	background-color: inherit;
 	padding: 0 32%;
 	&__detail {
 		display: flex;
+		column-gap: 28px;
 	}
 }

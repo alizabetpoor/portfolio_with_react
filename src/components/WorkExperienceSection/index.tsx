@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Title from '../Title';
 import Company from './Company';
+import Detail from './Detail';
+import { workExperienceData } from '../../static/workExperienceSection/detail/workExperienceData';
 import styles from './style.module.scss';
 
 const WorkExperienceSection = () => {
@@ -18,7 +20,15 @@ const WorkExperienceSection = () => {
 					activeCompanyIndex={activeCompanyIndex}
 					handleCompanyIndexChange={handleCompanyIndexChange}
 				/>
-				<div></div>
+				<div>
+					<Detail
+						company={workExperienceData[activeCompanyIndex].company}
+						startDate={workExperienceData[activeCompanyIndex].startDate}
+						endDate={workExperienceData[activeCompanyIndex].endDate}
+						role={workExperienceData[activeCompanyIndex].role}
+						items={workExperienceData[activeCompanyIndex].items}
+					/>
+				</div>
 			</div>
 		</div>
 	);

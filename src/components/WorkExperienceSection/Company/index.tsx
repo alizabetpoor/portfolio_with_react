@@ -1,7 +1,6 @@
 import { CompanyProps } from '../../../interface/components/workExperienceSection/company';
+import { workExperienceData } from '../../../static/workExperienceSection/detail/workExperienceData';
 import styles from './style.module.scss';
-
-const companies = ['Malltina', 'Test', 'Apple'];
 
 const Company = ({
 	activeCompanyIndex,
@@ -9,14 +8,14 @@ const Company = ({
 }: CompanyProps) => {
 	return (
 		<ul className={styles.company}>
-			{companies.map((company, index) => (
+			{workExperienceData.map((workData, index) => (
 				<li
 					onClick={() => handleCompanyIndexChange(index)}
 					className={`${
 						activeCompanyIndex === index ? styles.company__active : ''
 					}`}
 					key={index}>
-					{company}
+					{workData.company}
 				</li>
 			))}
 		</ul>
