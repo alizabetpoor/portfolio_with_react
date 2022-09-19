@@ -1,0 +1,32 @@
+.detail {
+	color: $light-slate;
+
+	&__roleAndCompany {
+		font-size: 22px;
+		color: $lightest-slate;
+		font-weight: 500;
+		&__sign {
+			color: $green;
+		}
+		a {
+			&:last-child {
+				color: $green;
+			}
+		}
+	}
+	&__date {
+		font-size: 13px;
+		margin: 4px 0 16px 0;
+	}
+	&__items {
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		&__item {
+			display: flex;
+			align-items: center;
+			column-gap: 16px;
+			margin-bottom: 10px;
+		}
+	}
+}
