@@ -1,0 +1,34 @@
+.project {
+	display: flex;
+	margin-bottom: 60px;
+	&__image {
+		position: relative;
+		width: 515px;
+		height: 360px;
+		display: block;
+		margin: 0;
+		padding: 0;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			&::after {
+				opacity: 0;
+			}
+		}
+		&::after {
+			transition: 0.2s ease-in-out;
+			content: '';
+			background-color: $green;
+			opacity: 0.4;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
