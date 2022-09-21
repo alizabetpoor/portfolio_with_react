@@ -1,0 +1,8 @@
+@mixin svgStyle {
+	stroke: $lightest-slate;
+	width: 20px;
+	height: 20px;
+	&:hover {
+		stroke: $green;
+	}
+}

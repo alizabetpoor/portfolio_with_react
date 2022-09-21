@@ -1,0 +1,5 @@
+@import '../svg';
+
+.expandSvg {
+	@include svgStyle;
+}
