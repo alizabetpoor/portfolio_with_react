@@ -1,6 +1,7 @@
+import { SvgProps } from '../../../interface/components/svg';
 import styles from './style.module.scss';
 
-const InstagramSvg = () => {
+const InstagramSvg = ({ transform = false }: SvgProps) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -11,7 +12,9 @@ const InstagramSvg = () => {
 			strokeWidth='2'
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className={styles.instagramSvg}>
+			className={`${styles.instagramSvg}${
+				transform ? ` ${styles.instagramSvg__transform}` : ''
+			}`}>
 			<title>Instagram</title>
 			<rect x='2' y='2' width='20' height='20' rx='5' ry='5'></rect>
 			<path d='M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z'></path>

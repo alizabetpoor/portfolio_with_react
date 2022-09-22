@@ -2,4 +2,7 @@
 
 .instagramSvg {
 	@include svgStyle;
+	&__transform {
+		@include transformStyle;
+	}
 }

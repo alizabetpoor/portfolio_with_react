@@ -1,8 +1,16 @@
 @mixin svgStyle {
 	stroke: $lightest-slate;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
+	padding: 10px 10px;
 	&:hover {
 		stroke: $green;
+	}
+}
+
+@mixin transformStyle {
+	transition: 0.2s ease-in-out;
+	&:hover {
+		transform: translateY(-4px);
 	}
 }

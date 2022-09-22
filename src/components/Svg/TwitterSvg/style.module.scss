@@ -2,4 +2,7 @@
 
 .twitterSvg {
 	@include svgStyle;
+	&__transform {
+		@include transformStyle;
+	}
 }

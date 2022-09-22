@@ -1,6 +1,7 @@
+import { SvgProps } from '../../../interface/components/svg';
 import styles from './style.module.scss';
 
-const ExpandSvg = () => {
+const ExpandSvg = ({ transform = false }: SvgProps) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -10,7 +11,9 @@ const ExpandSvg = () => {
 			strokeWidth='2'
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className={styles.expandSvg}>
+			className={`${styles.expandSvg}${
+				transform ? ` ${styles.expandSvg__transform}` : ''
+			}`}>
 			<title>External Link</title>
 			<path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'></path>
 			<polyline points='15 3 21 3 21 9'></polyline>
