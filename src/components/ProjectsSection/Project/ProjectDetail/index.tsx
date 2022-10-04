@@ -21,7 +21,9 @@ const ProjectDetail = ({
 			}}
 			className={styles.projectDetail}>
 			<span className={styles.projectDetail__featured}>Featured Project</span>
-			<h3 className={styles.projectDetail__title}>{title}</h3>
+			<h3 className={styles.projectDetail__title}>
+				<a href='#'>{title}</a>
+			</h3>
 			<span
 				style={{ ...textStyleConstructor() }}
 				className={styles.projectDetail__text}>
