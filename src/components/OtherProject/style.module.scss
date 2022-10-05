@@ -1,0 +1,24 @@
+.otherProject {
+	background-color: inherit;
+	padding: 100px 23%;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+
+	&__title {
+		align-self: center;
+		margin-bottom: 64px;
+	}
+
+	&__projectBoxes {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		margin-bottom: 64px;
+	}
+
+	&__button {
+		align-self: center;
+	}
+}
