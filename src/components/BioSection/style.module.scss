@@ -5,8 +5,7 @@
 	text-align: left;
 	justify-content: center;
 	align-items: flex-start;
-	margin-left: 25%;
-	padding: 100px 0;
+	padding: 100px 20%;
 	&__title {
 		font-size: 16px;
 		color: $green;
@@ -25,9 +24,43 @@
 		color: $slate;
 	}
 	&__description {
+		margin-top: 6px;
 		max-width: 540px;
 		color: $slate;
 		font-size: 20px;
 		margin-bottom: 50px;
+		line-height: 26px;
+	}
+}
+
+@media only screen and (max-width: 1062px) {
+	.biosection {
+		padding: 100px 10%;
+
+		&__name {
+			font-size: 50px;
+		}
+		&__role {
+			font-size: 50px;
+		}
+		&__description {
+			font-size: 16px;
+		}
+	}
+}
+
+@media only screen and (max-width: 808px) {
+	.biosection {
+		padding: 100px 8%;
+
+		&__name {
+			font-size: 30px;
+		}
+		&__role {
+			font-size: 30px;
+		}
+		&__description {
+			font-size: 14px;
+		}
 	}
 }
