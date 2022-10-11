@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import AboutSection from '../components/AboutSection';
 import BioSection from '../components/BioSection/BioSection';
+import ContactSection from '../components/ContactSection';
 import Email from '../components/Email';
 import OtherProject from '../components/OtherProject';
 import ProjectsSection from '../components/ProjectsSection';
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
 			<WorkExperienceSection />
 			<ProjectsSection />
 			<OtherProject />
+			<ContactSection />
 		</div>
 	);
 };

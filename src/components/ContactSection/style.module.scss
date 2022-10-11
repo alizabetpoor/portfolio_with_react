@@ -1,0 +1,31 @@
+.contactSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: inherit;
+	row-gap: 20px;
+	padding: 150px 30% 200px 30%;
+
+	&__title {
+		font-size: 16px;
+		color: $green;
+	}
+
+	&__answer {
+		color: $lightest-slate;
+		font-weight: 600;
+		font-size: 40px;
+	}
+
+	&__description {
+		color: $slate;
+		font-size: 16px;
+		line-height: 26px;
+		text-align: center;
+	}
+
+	&__button {
+		margin-top: 26px !important;
+	}
+}
